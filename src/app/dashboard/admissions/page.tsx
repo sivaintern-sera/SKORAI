@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -17,7 +17,7 @@ import { formatNumber } from "@/lib/utils";
 
 export default function AdmissionsDashboardPage() {
   const funnelSteps = [
-    { label: "Inquiries & Prospects", count: 42500, conversion: "34.8% inquiry-to-app", color: "bg-blue-600" },
+    { label: "Inquiries & Prospects", count: 42500, conversion: "34.8% inquiry-to-app", color: "bg-purple-700" },
     { label: "Completed Applications", count: 14820, conversion: "68.4% admit rate", color: "bg-indigo-600" },
     { label: "Admitted Students", count: 10137, conversion: "32.1% yield forecast", color: "bg-purple-600" },
     { label: "Enrolled & Deposited", count: 3254, conversion: "Target: 3,200", color: "bg-emerald-600" },
@@ -34,7 +34,7 @@ export default function AdmissionsDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Total Applications</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <Users className="w-4 h-4" />
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function AdmissionsDashboardPage() {
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">68.4%</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             Selectivity Target Met
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -87,7 +87,7 @@ export default function AdmissionsDashboardPage() {
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">28.4%</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             +3.1 pts Net Tuition Margin
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -132,3 +132,4 @@ export default function AdmissionsDashboardPage() {
     </DashboardLayout>
   );
 }
+

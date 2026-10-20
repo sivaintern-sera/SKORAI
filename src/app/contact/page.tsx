@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
       <main className="flex-1 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200/60">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200/60">
             <span>Institutional Consultation</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight">
@@ -70,7 +70,7 @@ export default function ContactPage() {
               <div className="pt-4">
                 <Link
                   href="/demo"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-sm transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-purple-700 hover:bg-purple-500 text-white text-xs font-semibold shadow-sm transition-colors"
                 >
                   <span>Explore Demo Dashboards Meanwhile</span>
                   <ArrowRight className="w-4 h-4" />
@@ -90,7 +90,7 @@ export default function ContactPage() {
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                     placeholder="e.g. Olivia"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                   />
                 </div>
                 <div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     placeholder="e.g. Carter"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                   />
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                     value={formData.workEmail}
                     onChange={(e) => setFormData({ ...formData, workEmail: e.target.value })}
                     placeholder="e.g. provost@university.edu"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                   />
                 </div>
                 <div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     value={formData.institutionName}
                     onChange={(e) => setFormData({ ...formData, institutionName: e.target.value })}
                     placeholder="e.g. State University"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                   />
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                     value={formData.jobTitle}
                     onChange={(e) => setFormData({ ...formData, jobTitle: e.target.value })}
                     placeholder="e.g. Provost & VP Academic Affairs"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                   />
                 </div>
                 <div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                   <select
                     value={formData.studentEnrollment}
                     onChange={(e) => setFormData({ ...formData, studentEnrollment: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                   >
                     <option>Under 5,000 Students</option>
                     <option>5,000 - 15,000 Students</option>
@@ -177,14 +177,14 @@ export default function ContactPage() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   placeholder="Tell us about specific retention, enrollment, or decision modeling objectives..."
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:ring-2 focus:ring-purple-700 focus:bg-white transition-all"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 px-6 rounded-full bg-blue-600 hover:bg-blue-500 active:bg-blue-800 text-white text-sm font-semibold shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+                className="w-full py-3 px-6 rounded-full bg-purple-700 hover:bg-purple-500 active:bg-purple-900 text-white text-sm font-semibold shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
               >
                 {isSubmitting ? (
                   <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -204,3 +204,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

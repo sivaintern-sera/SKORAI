@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -34,7 +34,7 @@ export default function PricingPage() {
 
       <main className="flex-1 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200/60">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200/60">
             <span>Higher Education Annual Institutional Licensing</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight">
@@ -53,7 +53,7 @@ export default function PricingPage() {
           {/* BASIC */}
           <div className="bg-white border border-slate-200/80 rounded-3xl p-8 space-y-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
             <div className="space-y-4">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+              <span className="text-xs font-bold text-purple-700 uppercase tracking-wider">
                 Basic Tier
               </span>
               <h3 className="text-2xl font-display font-bold text-slate-900">SKORAI Visibility</h3>
@@ -75,11 +75,11 @@ export default function PricingPage() {
 
           {/* PROFESSIONAL (Featured - TaxPal style highlighted dark container) */}
           <div className="bg-slate-900 text-white rounded-3xl p-8 space-y-6 flex flex-col justify-between relative shadow-xl">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold uppercase tracking-wider shadow">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-purple-700 text-white text-[11px] font-bold uppercase tracking-wider shadow">
               Recommended for Universities
             </div>
             <div className="space-y-4">
-              <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">
+              <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">
                 Professional Tier
               </span>
               <h3 className="text-2xl font-display font-bold text-white">SKORAI Intelligence</h3>
@@ -93,7 +93,7 @@ export default function PricingPage() {
             </div>
             <Link
               href="/contact"
-              className="w-full text-center py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-sm transition-colors"
+              className="w-full text-center py-2.5 rounded-full bg-purple-700 hover:bg-purple-500 text-white text-xs font-semibold shadow-sm transition-colors"
             >
               Request Professional Quote
             </Link>
@@ -145,21 +145,21 @@ export default function PricingPage() {
                     <td className="p-3.5 font-medium text-slate-900">{f.name}</td>
                     <td className="p-3.5 text-center">
                       {f.basic ? (
-                        <CheckCircle2 className="w-4 h-4 text-blue-600 mx-auto" />
+                        <CheckCircle2 className="w-4 h-4 text-purple-700 mx-auto" />
                       ) : (
                         <X className="w-4 h-4 text-slate-300 mx-auto" />
                       )}
                     </td>
                     <td className="p-3.5 text-center">
                       {f.pro ? (
-                        <CheckCircle2 className="w-4 h-4 text-blue-600 mx-auto" />
+                        <CheckCircle2 className="w-4 h-4 text-purple-700 mx-auto" />
                       ) : (
                         <X className="w-4 h-4 text-slate-300 mx-auto" />
                       )}
                     </td>
                     <td className="p-3.5 text-center">
                       {f.premium ? (
-                        <CheckCircle2 className="w-4 h-4 text-blue-600 mx-auto" />
+                        <CheckCircle2 className="w-4 h-4 text-purple-700 mx-auto" />
                       ) : (
                         <X className="w-4 h-4 text-slate-300 mx-auto" />
                       )}
@@ -176,3 +176,4 @@ export default function PricingPage() {
     </div>
   );
 }
+

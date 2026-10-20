@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -61,8 +61,8 @@ export default function SolutionsPage() {
 
       <main className="flex-1 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200/60">
-            <Compass className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200/60">
+            <Compass className="w-3.5 h-3.5 text-purple-700" />
             <span>Targeted Institutional Outcomes</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight">
@@ -86,7 +86,7 @@ export default function SolutionsPage() {
                   <div className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Benchmark Proof Points</div>
                   <div className="flex flex-wrap gap-1.5">
                     {sol.kpis.map((kpi) => (
-                      <span key={kpi} className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                      <span key={kpi} className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-purple-50 text-purple-800 border border-purple-100">
                         {kpi}
                       </span>
                     ))}
@@ -110,3 +110,4 @@ export default function SolutionsPage() {
     </div>
   );
 }
+

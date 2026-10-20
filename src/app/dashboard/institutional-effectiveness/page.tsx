@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -48,12 +48,12 @@ export default function InstitutionalEffectivenessPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Strategic Goals Progress</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <TrendingUp className="w-4 h-4" />
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">18 / 20</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             Vision 2030 Milestones
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -85,7 +85,7 @@ export default function InstitutionalEffectivenessPage() {
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-purple-600 mt-2">96.2%</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             24 Departments Assessed
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -121,14 +121,14 @@ export default function InstitutionalEffectivenessPage() {
                 <tr key={g.goal} className="hover:bg-slate-50/70 transition-colors">
                   <td className="p-3.5 font-display font-bold text-slate-900">{g.goal}</td>
                   <td className="p-3.5 font-mono text-slate-500">{g.baseline}</td>
-                  <td className="p-3.5 font-mono font-bold text-blue-600">{g.current}</td>
+                  <td className="p-3.5 font-mono font-bold text-purple-700">{g.current}</td>
                   <td className="p-3.5 font-mono text-slate-700">{g.target}</td>
                   <td className="p-3.5">
                     <span
                       className={`px-2.5 py-0.5 rounded-full text-[11px] font-semibold border ${
                         g.status === "Achieved"
                           ? "bg-emerald-50 text-emerald-700 border-emerald-200"
-                          : "bg-blue-50 text-blue-700 border-blue-200"
+                          : "bg-purple-50 text-purple-800 border-purple-200"
                       }`}
                     >
                       {g.status}
@@ -143,3 +143,4 @@ export default function InstitutionalEffectivenessPage() {
     </DashboardLayout>
   );
 }
+

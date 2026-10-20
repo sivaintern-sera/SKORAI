@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import {
@@ -41,7 +41,7 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
     <div className="space-y-4 font-sans text-slate-900">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center">
+          <div className="w-8 h-8 rounded-lg bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center">
             <Lightbulb className="w-4 h-4" />
           </div>
           <div>
@@ -54,7 +54,7 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
           </div>
         </div>
 
-        <span className="text-[10px] font-semibold text-blue-700 bg-blue-50 ring-1 ring-inset ring-blue-700/10 px-2.5 py-0.5 rounded-full">
+        <span className="text-[10px] font-semibold text-purple-800 bg-purple-50 ring-1 ring-inset ring-purple-800/10 px-2.5 py-0.5 rounded-full">
           Simulated AI Engine
         </span>
       </div>
@@ -81,12 +81,12 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
                           ? "bg-amber-50 text-amber-700 border-amber-200"
                           : isMedium
                           ? "bg-yellow-50 text-yellow-800 border-yellow-200"
-                          : "bg-blue-50 text-blue-700 border-blue-200"
+                          : "bg-purple-50 text-purple-800 border-purple-200"
                       }`}
                     >
                       {insight.riskLevel} Risk
                     </span>
-                    <span className="text-xs font-semibold text-blue-600">
+                    <span className="text-xs font-semibold text-purple-700">
                       {insight.category}
                     </span>
                     <span className="text-[11px] text-slate-400">
@@ -124,7 +124,7 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
                     type="button"
                     onClick={() => handleTriggerAction(insight.id)}
                     disabled={actionTriggeredId === insight.id}
-                    className="px-3.5 py-1.5 rounded-full bg-blue-600 hover:bg-blue-500 active:bg-blue-800 text-xs font-semibold text-white transition-colors flex items-center gap-1 shadow-xs cursor-pointer"
+                    className="px-3.5 py-1.5 rounded-full bg-purple-700 hover:bg-purple-500 active:bg-purple-900 text-xs font-semibold text-white transition-colors flex items-center gap-1 shadow-xs cursor-pointer"
                   >
                     <span>{actionTriggeredId === insight.id ? "Triggering..." : "Act on Insight"}</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
@@ -142,7 +142,7 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
           <div className="bg-white border border-slate-200 w-full max-w-xl rounded-3xl p-6 shadow-2xl space-y-4 text-slate-900">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2">
-                <Lightbulb className="w-5 h-5 text-blue-600" />
+                <Lightbulb className="w-5 h-5 text-purple-700" />
                 <h3 className="font-display font-bold text-slate-900 text-base">
                   Model Explainability &amp; Verification
                 </h3>
@@ -163,12 +163,12 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                <span className="text-blue-700 font-semibold">Model Explanation &amp; Rationale:</span>
+                <span className="text-purple-800 font-semibold">Model Explanation &amp; Rationale:</span>
                 <p className="text-slate-600 leading-relaxed">{selectedInsight.explanation}</p>
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                <span className="text-blue-700 font-semibold">Supporting Data Signals:</span>
+                <span className="text-purple-800 font-semibold">Supporting Data Signals:</span>
                 <p className="text-slate-600 leading-relaxed">{selectedInsight.supportingData}</p>
               </div>
 
@@ -198,3 +198,4 @@ export function AIInsightsList({ filterCategory, limit }: AIInsightsListProps) {
     </div>
   );
 }
+

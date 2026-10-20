@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -34,7 +34,7 @@ export default function DeanDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Enrolled Students</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <Users className="w-4 h-4" />
             </div>
           </div>
@@ -70,14 +70,14 @@ export default function DeanDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Faculty Lines (FTE)</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <Briefcase className="w-4 h-4" />
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">
             {college.totalFaculty} FTE
           </div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             4 Searches Active (AI &amp; Cyber)
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -115,7 +115,7 @@ export default function DeanDashboardPage() {
               Comparative metrics across all 4 departments in the College of Computing &amp; IT
             </p>
           </div>
-          <span className="text-xs text-blue-600 bg-blue-50 font-semibold px-2.5 py-1 rounded-full">College Dean View</span>
+          <span className="text-xs text-purple-700 bg-purple-50 font-semibold px-2.5 py-1 rounded-full">College Dean View</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -125,7 +125,7 @@ export default function DeanDashboardPage() {
               className="bg-slate-50/80 rounded-xl p-4 border border-slate-200/80 space-y-3"
             >
               <div>
-                <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider">
+                <span className="text-[10px] font-bold text-purple-700 uppercase tracking-wider">
                   {dept.code}
                 </span>
                 <h5 className="text-base font-display font-bold text-slate-900">{dept.name}</h5>
@@ -147,7 +147,7 @@ export default function DeanDashboardPage() {
                 </div>
                 <div>
                   <div className="text-slate-500 text-[10px]">Retention</div>
-                  <div className="font-bold text-blue-600">{dept.retentionRate}%</div>
+                  <div className="font-bold text-purple-700">{dept.retentionRate}%</div>
                 </div>
               </div>
 
@@ -167,3 +167,4 @@ export default function DeanDashboardPage() {
     </DashboardLayout>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useMemo } from "react";
 import {
@@ -99,7 +99,7 @@ export function StudentDataTable({
                 setPage(1);
               }}
               placeholder="Search students..."
-              className="pl-8 pr-3 py-1.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600 shadow-2xs"
+              className="pl-8 pr-3 py-1.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-1 focus:ring-purple-700 shadow-2xs"
             />
           </div>
 
@@ -110,7 +110,7 @@ export function StudentDataTable({
               setSelectedRisk(e.target.value);
               setPage(1);
             }}
-            className="bg-slate-50 border border-slate-200 text-xs text-slate-700 rounded-xl px-3 py-1.5 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600 shadow-2xs"
+            className="bg-slate-50 border border-slate-200 text-xs text-slate-700 rounded-xl px-3 py-1.5 focus:bg-white focus:outline-none focus:ring-1 focus:ring-purple-700 shadow-2xs"
           >
             <option value="All">All Risk Levels</option>
             <option value="Critical">Critical Risk Only</option>
@@ -181,7 +181,7 @@ export function StudentDataTable({
 
               return (
                 <tr key={stu.id} className="hover:bg-slate-50/80 transition-colors">
-                  <td className="p-3 font-mono font-semibold text-blue-600">
+                  <td className="p-3 font-mono font-semibold text-purple-700">
                     {stu.studentId}
                   </td>
                   <td className="p-3 font-medium text-slate-900">
@@ -273,3 +273,4 @@ export function StudentDataTable({
     </div>
   );
 }
+

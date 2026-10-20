@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useMemo } from "react";
 import {
@@ -86,13 +86,13 @@ export function ScenarioSimulator() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
         <div>
           <div className="flex items-center gap-2">
-            <span className="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center font-bold text-xs">
+            <span className="w-8 h-8 rounded-lg bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center font-bold text-xs">
               <Sliders className="w-4 h-4" />
             </span>
             <h3 className="font-display text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
               Institutional Decision Intelligence Simulator
             </h3>
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10">
               Decision Intelligence Tier
             </span>
           </div>
@@ -122,9 +122,9 @@ export function ScenarioSimulator() {
               key={preset.name}
               type="button"
               onClick={() => applyPreset(preset)}
-              className="text-left p-3.5 rounded-xl bg-slate-50 hover:bg-blue-50/60 border border-slate-200/80 hover:border-blue-400 transition-all group cursor-pointer shadow-2xs"
+              className="text-left p-3.5 rounded-xl bg-slate-50 hover:bg-purple-50/60 border border-slate-200/80 hover:border-purple-400 transition-all group cursor-pointer shadow-2xs"
             >
-              <div className="text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors flex items-center justify-between font-display">
+              <div className="text-xs font-bold text-slate-900 group-hover:text-purple-700 transition-colors flex items-center justify-between font-display">
                 <span>{preset.name}</span>
                 <ChevronRight className="w-3.5 h-3.5 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
               </div>
@@ -162,7 +162,7 @@ export function ScenarioSimulator() {
             step="1"
             value={enrollmentChangePct}
             onChange={(e) => setEnrollmentChangePct(Number(e.target.value))}
-            className="w-full accent-blue-600 bg-slate-200 h-2 rounded-lg cursor-pointer"
+            className="w-full accent-purple-700 bg-slate-200 h-2 rounded-lg cursor-pointer"
           />
           <div className="flex justify-between text-[10px] text-slate-400">
             <span>-20% (Severe contraction)</span>
@@ -194,7 +194,7 @@ export function ScenarioSimulator() {
             step="0.5"
             value={retentionChangePct}
             onChange={(e) => setRetentionChangePct(Number(e.target.value))}
-            className="w-full accent-blue-600 bg-slate-200 h-2 rounded-lg cursor-pointer"
+            className="w-full accent-purple-700 bg-slate-200 h-2 rounded-lg cursor-pointer"
           />
           <div className="flex justify-between text-[10px] text-slate-400">
             <span>-10 pts</span>
@@ -226,7 +226,7 @@ export function ScenarioSimulator() {
             step="1"
             value={stateAppropriationChangePct}
             onChange={(e) => setStateAppropriationChangePct(Number(e.target.value))}
-            className="w-full accent-blue-600 bg-slate-200 h-2 rounded-lg cursor-pointer"
+            className="w-full accent-purple-700 bg-slate-200 h-2 rounded-lg cursor-pointer"
           />
           <div className="flex justify-between text-[10px] text-slate-400">
             <span>-15% (Budget cut)</span>
@@ -241,7 +241,7 @@ export function ScenarioSimulator() {
             <span
               className={`font-mono font-bold ${
                 facultyStaffingChangePct > 0
-                  ? "text-blue-600"
+                  ? "text-purple-700"
                   : facultyStaffingChangePct < 0
                   ? "text-amber-600"
                   : "text-slate-600"
@@ -258,7 +258,7 @@ export function ScenarioSimulator() {
             step="1"
             value={facultyStaffingChangePct}
             onChange={(e) => setFacultyStaffingChangePct(Number(e.target.value))}
-            className="w-full accent-blue-600 bg-slate-200 h-2 rounded-lg cursor-pointer"
+            className="w-full accent-purple-700 bg-slate-200 h-2 rounded-lg cursor-pointer"
           />
           <div className="flex justify-between text-[10px] text-slate-400">
             <span>-10% (Attrition/freeze)</span>
@@ -290,7 +290,7 @@ export function ScenarioSimulator() {
             step="1"
             value={financialAidBudgetChangePct}
             onChange={(e) => setFinancialAidBudgetChangePct(Number(e.target.value))}
-            className="w-full accent-blue-600 bg-slate-200 h-2 rounded-lg cursor-pointer"
+            className="w-full accent-purple-700 bg-slate-200 h-2 rounded-lg cursor-pointer"
           />
           <div className="flex justify-between text-[10px] text-slate-400">
             <span>-15% (Restricted aid)</span>
@@ -311,7 +311,7 @@ export function ScenarioSimulator() {
                 ? "bg-amber-50 text-amber-700 border-amber-200"
                 : result.institutionalRiskRating === "Favorable Opportunity"
                 ? "bg-emerald-50 text-emerald-700 border-emerald-200"
-                : "bg-blue-50 text-blue-700 border-blue-200"
+                : "bg-purple-50 text-purple-800 border-purple-200"
             }`}
           >
             {result.institutionalRiskRating}
@@ -367,7 +367,7 @@ export function ScenarioSimulator() {
         <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200/80">
           <div className="flex items-center justify-between text-slate-500 text-xs mb-1">
             <span>Projected 1st-Yr Retention</span>
-            <TrendingUp className="w-4 h-4 text-blue-600" />
+            <TrendingUp className="w-4 h-4 text-purple-700" />
           </div>
           <div className="font-display text-2xl font-bold text-slate-900">
             {result.retentionRateProjected}%
@@ -381,7 +381,7 @@ export function ScenarioSimulator() {
         <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200/80">
           <div className="flex items-center justify-between text-slate-500 text-xs mb-1">
             <span>Instructional Staffing Delta</span>
-            <Users className="w-4 h-4 text-blue-600" />
+            <Users className="w-4 h-4 text-purple-700" />
           </div>
           <div className="font-display text-2xl font-bold text-slate-900">
             {result.facultyFteImpact >= 0 ? "+" : ""}
@@ -394,13 +394,13 @@ export function ScenarioSimulator() {
       </div>
 
       {/* Narrative Synthesis & Resource Recommendations */}
-      <div className="bg-blue-50/70 border border-blue-200/70 rounded-2xl p-6 space-y-3">
+      <div className="bg-purple-50/70 border border-purple-200/70 rounded-2xl p-6 space-y-3">
         <div className="flex items-center gap-2">
-          <Lightbulb className="w-4 h-4 text-blue-600" />
-          <h4 className="font-display text-xs font-bold text-blue-900 uppercase tracking-wider">
+          <Lightbulb className="w-4 h-4 text-purple-700" />
+          <h4 className="font-display text-xs font-bold text-purple-950 uppercase tracking-wider">
             Simulated Executive Synthesis
           </h4>
-          <span className="text-[10px] font-semibold text-blue-700 bg-white px-2.5 py-0.5 rounded-full border border-blue-200">
+          <span className="text-[10px] font-semibold text-purple-800 bg-white px-2.5 py-0.5 rounded-full border border-purple-200">
             Simulated Forecast — Not Certified Financial Advice
           </span>
         </div>
@@ -408,14 +408,14 @@ export function ScenarioSimulator() {
           {result.summaryBrief}
         </p>
 
-        <div className="pt-3 border-t border-blue-200/60">
-          <div className="text-xs font-semibold text-blue-900 mb-2 font-display">
+        <div className="pt-3 border-t border-purple-200/60">
+          <div className="text-xs font-semibold text-purple-950 mb-2 font-display">
             AI Recommended Strategic Actions:
           </div>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-xs text-slate-700">
             {result.resourceRecommendations.map((rec, i) => (
-              <li key={i} className="flex items-start gap-2 bg-white p-3 rounded-xl border border-blue-200/70 shadow-2xs">
-                <CheckCircle className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+              <li key={i} className="flex items-start gap-2 bg-white p-3 rounded-xl border border-purple-200/70 shadow-2xs">
+                <CheckCircle className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                 <span>{rec}</span>
               </li>
             ))}
@@ -425,3 +425,4 @@ export function ScenarioSimulator() {
     </div>
   );
 }
+

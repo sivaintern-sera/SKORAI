@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -25,8 +25,8 @@ export default function PlatformOverviewPage() {
       <main className="flex-1 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200/60">
-            <Cpu className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200/60">
+            <Cpu className="w-3.5 h-3.5 text-purple-700" />
             <span>Platform Technical Architecture</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight">
@@ -40,7 +40,7 @@ export default function PlatformOverviewPage() {
         {/* 4 Architectural Layers */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-8 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center">
               <Database className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-display font-bold text-slate-900">1. Unified University Data Ingestion</h3>
@@ -97,15 +97,15 @@ export default function PlatformOverviewPage() {
         </div>
 
         {/* Call to action */}
-        <div className="p-10 rounded-3xl bg-blue-600 text-white text-center space-y-4 shadow-xl">
+        <div className="p-10 rounded-3xl bg-purple-700 text-white text-center space-y-4 shadow-xl">
           <h3 className="text-3xl font-display font-bold text-white">Experience the Platform in Action</h3>
-          <p className="text-sm text-blue-100 max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm text-purple-100 max-w-xl mx-auto leading-relaxed">
             Test the live platform loaded with Northbridge State University&apos;s 10,000-student synthetic dataset.
           </p>
           <div className="pt-2">
             <Link
               href="/demo"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-blue-600 font-semibold text-sm hover:bg-blue-50 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-purple-700 font-semibold text-sm hover:bg-purple-50 transition-colors shadow-sm"
             >
               <span>Explore 14 Live Roles</span>
               <ArrowRight className="w-4 h-4" />
@@ -118,3 +118,4 @@ export default function PlatformOverviewPage() {
     </div>
   );
 }
+

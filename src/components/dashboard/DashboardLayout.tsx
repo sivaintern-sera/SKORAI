@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
@@ -103,11 +103,11 @@ export function DashboardLayout({
   ];
 
   return (
-    <div className="h-screen max-h-screen overflow-hidden bg-[#F8FAFC] text-slate-900 flex flex-col font-sans antialiased selection:bg-blue-600 selection:text-white">
+    <div className="h-screen max-h-screen overflow-hidden bg-[#F8FAFC] text-slate-900 flex flex-col font-sans antialiased selection:bg-purple-700 selection:text-white">
       {/* Top Banner: Prominent DEMO ENVIRONMENT notice */}
       <div className="shrink-0 bg-slate-900 border-b border-slate-800 px-4 py-2 flex items-center justify-between text-xs text-white z-30">
         <div className="flex items-center gap-2">
-          <span className="px-2.5 py-0.5 rounded-full font-bold bg-blue-600 text-white text-[10px] tracking-wide uppercase shadow-sm">
+          <span className="px-2.5 py-0.5 rounded-full font-bold bg-purple-700 text-white text-[10px] tracking-wide uppercase shadow-sm">
             Demo Environment
           </span>
           <span className="hidden sm:inline text-slate-300">
@@ -138,7 +138,7 @@ export function DashboardLayout({
                     type="button"
                     onClick={() => handleSwitchRole(acc.role)}
                     className={`w-full text-left px-3.5 py-2 text-xs flex items-center justify-between hover:bg-slate-50 transition-colors ${
-                      acc.role === activeRole ? "bg-blue-50 text-blue-700 font-semibold" : "text-slate-700"
+                      acc.role === activeRole ? "bg-purple-50 text-purple-800 font-semibold" : "text-slate-700"
                     }`}
                   >
                     <div>
@@ -146,7 +146,7 @@ export function DashboardLayout({
                       <div className="text-[10px] text-slate-500 truncate">{acc.name}</div>
                     </div>
                     {acc.role === activeRole && (
-                      <CheckCircle className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                      <CheckCircle className="w-3.5 h-3.5 text-purple-700 shrink-0" />
                     )}
                   </button>
                 ))}
@@ -178,14 +178,14 @@ export function DashboardLayout({
               {/* Institution Identity */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-800">
                 <Link href="/" className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20">
+                  <div className="w-9 h-9 rounded-xl bg-purple-700 flex items-center justify-center text-white shadow-md shadow-purple-500/20">
                     <GraduationCap className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display font-bold text-white text-sm tracking-tight leading-none">
                       NORTHBRIDGE
                     </div>
-                    <div className="text-[10px] text-blue-400 font-semibold tracking-wider mt-0.5">
+                    <div className="text-[10px] text-purple-400 font-semibold tracking-wider mt-0.5">
                       STATE UNIVERSITY
                     </div>
                   </div>
@@ -206,22 +206,22 @@ export function DashboardLayout({
                 title="View Profile & Credentials"
               >
                 <div className="flex items-center gap-2.5 mb-1.5">
-                  <div className="w-8 h-8 rounded-lg bg-blue-600/30 text-blue-400 border border-blue-500/40 flex items-center justify-center font-bold text-xs shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <div className="w-8 h-8 rounded-lg bg-purple-700/30 text-purple-400 border border-purple-500/40 flex items-center justify-center font-bold text-xs shrink-0 group-hover:bg-purple-700 group-hover:text-white transition-colors">
                     {currentAccount.name.charAt(0)}
                   </div>
                   <div className="overflow-hidden flex-1">
                     <div className="text-xs font-semibold text-white truncate flex items-center justify-between">
                       <span className="truncate">{currentAccount.name}</span>
-                      <ArrowRight className="w-3 h-3 text-slate-500 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all" />
+                      <ArrowRight className="w-3 h-3 text-slate-500 group-hover:text-purple-400 group-hover:translate-x-0.5 transition-all" />
                     </div>
-                    <div className="text-[10px] text-blue-300 font-medium truncate">
+                    <div className="text-[10px] text-purple-300 font-medium truncate">
                       {currentAccount.roleTitle}
                     </div>
                   </div>
                 </div>
                 <div className="text-[10px] text-slate-400 line-clamp-1 flex items-center justify-between pt-1 border-t border-slate-700/40">
                   <span className="truncate">{currentAccount.institution}</span>
-                  <span className="text-[9px] text-blue-400 font-medium shrink-0 ml-1">Profile &rarr;</span>
+                  <span className="text-[9px] text-purple-400 font-medium shrink-0 ml-1">Profile &rarr;</span>
                 </div>
               </Link>
 
@@ -240,7 +240,7 @@ export function DashboardLayout({
                       onClick={() => setSidebarOpen(false)}
                       className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium transition-all ${
                         isActive
-                          ? "bg-blue-600 text-white shadow-sm"
+                          ? "bg-purple-700 text-white shadow-sm"
                           : "text-slate-300 hover:bg-slate-800 hover:text-white"
                       }`}
                     >
@@ -255,7 +255,7 @@ export function DashboardLayout({
               <div className="pt-2 border-t border-slate-800">
                 <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider px-3 mb-2 flex items-center justify-between font-display">
                   <span>Other Roles</span>
-                  <Link href="/demo" className="text-blue-400 hover:underline">
+                  <Link href="/demo" className="text-purple-400 hover:underline">
                     All 14
                   </Link>
                 </div>
@@ -321,7 +321,7 @@ export function DashboardLayout({
               <div>
                 <h2 className="font-display text-base sm:text-lg font-bold text-slate-900 tracking-tight flex items-center gap-2">
                   <span>{title}</span>
-                  <span className="hidden md:inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                  <span className="hidden md:inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10">
                     {currentAccount.roleTitle}
                   </span>
                 </h2>
@@ -352,7 +352,7 @@ export function DashboardLayout({
                 <select
                   value={selectedTerm}
                   onChange={(e) => setSelectedTerm(e.target.value)}
-                  className="bg-white border border-slate-200 text-slate-700 text-xs rounded-xl px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-600 shadow-xs"
+                  className="bg-white border border-slate-200 text-slate-700 text-xs rounded-xl px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-purple-700 shadow-xs"
                 >
                   <option>Fall 2026 (Current)</option>
                   <option>Spring 2026</option>
@@ -382,17 +382,17 @@ export function DashboardLayout({
                   aria-label="Notifications"
                 >
                   <Bell className="w-4 h-4" />
-                  <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+                  <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-purple-700 animate-pulse" />
                 </button>
 
                 {notificationsOpen && (
                   <div className="absolute right-0 mt-2 w-80 sm:w-96 bg-white border border-slate-200 rounded-2xl shadow-xl p-4 z-50 text-slate-900">
                     <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
                       <div className="font-display font-semibold text-xs text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                        <Bell className="w-3.5 h-3.5 text-blue-600" />
+                        <Bell className="w-3.5 h-3.5 text-purple-700" />
                         <span>Institutional Alerts</span>
                       </div>
-                      <span className="text-[10px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full ring-1 ring-inset ring-blue-700/10">
+                      <span className="text-[10px] font-semibold text-purple-800 bg-purple-50 px-2 py-0.5 rounded-full ring-1 ring-inset ring-purple-800/10">
                         3 New Alerts
                       </span>
                     </div>
@@ -408,12 +408,12 @@ export function DashboardLayout({
                         </p>
                       </div>
 
-                      <div className="p-3 rounded-xl bg-blue-50/70 border border-blue-200/70 text-xs">
-                        <div className="font-semibold text-blue-900 flex items-center justify-between">
+                      <div className="p-3 rounded-xl bg-purple-50/70 border border-purple-200/70 text-xs">
+                        <div className="font-semibold text-purple-950 flex items-center justify-between">
                           <span>Admissions Yield Update</span>
-                          <span className="text-[10px] text-blue-700 font-medium">1h ago</span>
+                          <span className="text-[10px] text-purple-800 font-medium">1h ago</span>
                         </div>
-                        <p className="text-blue-800 text-[11px] mt-1">
+                        <p className="text-purple-900 text-[11px] mt-1">
                           Deposit velocity for out-of-state applicants is +4.2% above baseline.
                         </p>
                       </div>
@@ -438,11 +438,11 @@ export function DashboardLayout({
                 className="flex items-center gap-2 pl-2 border-l border-slate-200 hover:opacity-85 transition-opacity cursor-pointer group"
                 title="View Profile & Credentials"
               >
-                <div className="w-8 h-8 rounded-full bg-blue-600 group-hover:bg-blue-700 flex items-center justify-center font-bold text-white text-xs shadow-sm transition-colors">
+                <div className="w-8 h-8 rounded-full bg-purple-700 group-hover:bg-purple-800 flex items-center justify-center font-bold text-white text-xs shadow-sm transition-colors">
                   {currentAccount.name.charAt(0)}
                 </div>
                 <div className="hidden xl:block text-left">
-                  <div className="text-xs font-semibold text-slate-900 leading-tight group-hover:text-blue-600 transition-colors">
+                  <div className="text-xs font-semibold text-slate-900 leading-tight group-hover:text-purple-700 transition-colors">
                     {currentAccount.name}
                   </div>
                   <div className="text-[10px] text-slate-500 truncate max-w-[130px]">
@@ -466,7 +466,7 @@ export function DashboardLayout({
           <div className="bg-white border border-slate-200 rounded-3xl w-full max-w-2xl p-6 shadow-2xl space-y-4">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="font-display font-semibold text-sm text-slate-900 flex items-center gap-2">
-                <Search className="w-4 h-4 text-blue-600" />
+                <Search className="w-4 h-4 text-purple-700" />
                 <span>Search Institutional Data &amp; Student Records</span>
               </div>
               <button
@@ -481,10 +481,10 @@ export function DashboardLayout({
               type="text"
               autoFocus
               placeholder="Search students by name or ID, course codes, departments, retention flags..."
-              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-purple-700"
             />
             <div className="text-xs text-slate-500">
-              Try searching: <span className="text-blue-600 font-semibold cursor-pointer">Michael Brown</span>, <span className="text-blue-600 font-semibold cursor-pointer">CS 220</span>, <span className="text-blue-600 font-semibold cursor-pointer">Pell Grant</span>, or <span className="text-blue-600 font-semibold cursor-pointer">Retention Risk &gt; 70</span>
+              Try searching: <span className="text-purple-700 font-semibold cursor-pointer">Michael Brown</span>, <span className="text-purple-700 font-semibold cursor-pointer">CS 220</span>, <span className="text-purple-700 font-semibold cursor-pointer">Pell Grant</span>, or <span className="text-purple-700 font-semibold cursor-pointer">Retention Risk &gt; 70</span>
             </div>
           </div>
         </div>
@@ -492,3 +492,4 @@ export function DashboardLayout({
     </div>
   );
 }
+

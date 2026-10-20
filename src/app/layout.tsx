@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter, Lexend } from "next/font/google";
 import "./globals.css";
 
@@ -38,9 +38,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${lexend.variable} h-full scroll-smooth bg-white antialiased`}
     >
-      <body className="flex min-h-full flex-col font-sans bg-white text-slate-900 selection:bg-blue-600 selection:text-white">
+      <body className="flex min-h-full flex-col font-sans bg-white text-slate-900 selection:bg-purple-700 selection:text-white">
         {children}
       </body>
     </html>
   );
 }
+

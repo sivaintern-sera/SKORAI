@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -65,12 +65,12 @@ export default function AdminDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Total Audit Log Events</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <FileText className="w-4 h-4" />
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">142,480</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">Retained for 7 Years</div>
+          <div className="text-xs text-purple-700 font-semibold mt-1">Retained for 7 Years</div>
           <div className="text-xs text-slate-500 mt-1">Immutable Cryptographic Trail</div>
         </div>
 
@@ -94,7 +94,7 @@ export default function AdminDashboardPage() {
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">Enforced</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">FERPA PII Sanitizer Active</div>
+          <div className="text-xs text-purple-700 font-semibold mt-1">FERPA PII Sanitizer Active</div>
           <div className="text-xs text-slate-500 mt-1">Deterministic Model Fallback OK</div>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function AdminDashboardPage() {
             type="button"
             onClick={handleManualSync}
             disabled={isSyncing}
-            className="px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-sm"
+            className="px-4 py-2 rounded-full bg-purple-700 hover:bg-purple-500 text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-sm"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? "animate-spin" : ""}`} />
             <span>{isSyncing ? "Syncing..." : "Trigger Manual Re-Sync"}</span>
@@ -167,9 +167,9 @@ export default function AdminDashboardPage() {
             <tbody className="divide-y divide-slate-100 font-mono text-xs">
               {auditEvents.map((evt) => (
                 <tr key={evt.id} className="hover:bg-slate-50/70 transition-colors">
-                  <td className="p-3.5 text-blue-600 font-bold">{evt.id}</td>
+                  <td className="p-3.5 text-purple-700 font-bold">{evt.id}</td>
                   <td className="p-3.5 text-slate-900 font-sans font-medium">{evt.user}</td>
-                  <td className="p-3.5 text-blue-600 font-semibold">{evt.action}</td>
+                  <td className="p-3.5 text-purple-700 font-semibold">{evt.action}</td>
                   <td className="p-3.5 text-slate-600">{evt.resource}</td>
                   <td className="p-3.5 text-slate-500">{evt.time}</td>
                   <td className="p-3.5 text-slate-500">{evt.ip}</td>
@@ -182,3 +182,4 @@ export default function AdminDashboardPage() {
     </DashboardLayout>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -49,7 +49,7 @@ export default function StudentDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
           <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">Degree Progress</div>
           <div className="font-display text-3xl font-extrabold text-slate-900 mt-2">78 / 120</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             65% Degree Requirement Complete
           </div>
           <div className="text-[11px] text-slate-500 mt-1">
@@ -70,8 +70,8 @@ export default function StudentDashboardPage() {
 
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
           <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">Career Readiness Score</div>
-          <div className="font-display text-3xl font-extrabold text-blue-600 mt-2">92 / 100</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="font-display text-3xl font-extrabold text-purple-700 mt-2">92 / 100</div>
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             Internship Ready Portfolio
           </div>
           <div className="text-[11px] text-slate-500 mt-1">
@@ -85,15 +85,15 @@ export default function StudentDashboardPage() {
         <div className="space-y-1.5 flex-1 max-w-xl">
           <div className="flex items-center justify-between text-xs font-display">
             <span className="font-semibold text-slate-900">Degree Completion Milestone</span>
-            <span className="font-mono text-blue-600 font-bold">65% (78 Credits)</span>
+            <span className="font-mono text-purple-700 font-bold">65% (78 Credits)</span>
           </div>
           <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden border border-slate-200">
-            <div className="bg-blue-600 h-full rounded-full transition-all duration-1000" style={{ width: "65%" }} />
+            <div className="bg-purple-700 h-full rounded-full transition-all duration-1000" style={{ width: "65%" }} />
           </div>
         </div>
 
         <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3 shrink-0">
-          <div className="w-9 h-9 rounded-full bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center font-bold text-xs">
+          <div className="w-9 h-9 rounded-full bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center font-bold text-xs">
             SM
           </div>
           <div className="text-xs">
@@ -111,7 +111,7 @@ export default function StudentDashboardPage() {
             onClick={() => setActiveTab("courses")}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "courses"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 bg-slate-50 hover:bg-slate-100"
             }`}
           >
@@ -122,7 +122,7 @@ export default function StudentDashboardPage() {
             onClick={() => setActiveTab("audit")}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "audit"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 bg-slate-50 hover:bg-slate-100"
             }`}
           >
@@ -133,7 +133,7 @@ export default function StudentDashboardPage() {
             onClick={() => setActiveTab("career")}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "career"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 bg-slate-50 hover:bg-slate-100"
             }`}
           >
@@ -160,14 +160,14 @@ export default function StudentDashboardPage() {
                 <tbody className="divide-y divide-slate-100 bg-white">
                   {enrolledCourses.map((c) => (
                     <tr key={c.code} className="hover:bg-slate-50/80">
-                      <td className="p-3 font-mono font-bold text-blue-600">{c.code}</td>
+                      <td className="p-3 font-mono font-bold text-purple-700">{c.code}</td>
                       <td className="p-3 font-medium text-slate-900">{c.title}</td>
                       <td className="p-3 text-slate-600">{c.instructor}</td>
                       <td className="p-3 font-mono">{c.credits}</td>
                       <td className="p-3 font-mono font-bold text-emerald-600">{c.grade}</td>
                       <td className="p-3 font-mono">{c.attendance}</td>
                       <td className="p-3">
-                        <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                        <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10">
                           {c.status}
                         </span>
                       </td>
@@ -178,10 +178,10 @@ export default function StudentDashboardPage() {
             </div>
 
             {/* AI Recommendation Box */}
-            <div className="p-5 rounded-2xl bg-blue-50/70 border border-blue-200/70 flex items-start gap-3">
-              <Lightbulb className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+            <div className="p-5 rounded-2xl bg-purple-50/70 border border-purple-200/70 flex items-start gap-3">
+              <Lightbulb className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
               <div className="space-y-1 text-xs">
-                <div className="font-display font-bold text-blue-900">
+                <div className="font-display font-bold text-purple-950">
                   AI Course Recommendation for Spring 2027 Registration
                 </div>
                 <p className="text-slate-700 leading-relaxed">
@@ -210,7 +210,7 @@ export default function StudentDashboardPage() {
                 <div className="font-semibold text-slate-900 font-display">Major Core Requirements (48 Hours)</div>
                 <div className="text-slate-500 text-[11px]">Programming, Algorithms, Systems, Discrete Structures</div>
               </div>
-              <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200 font-semibold">
+              <span className="px-3 py-1 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
                 In Progress (30/48)
               </span>
             </div>
@@ -252,7 +252,7 @@ export default function StudentDashboardPage() {
               <button
                 type="button"
                 onClick={() => alert("Application routed through University Handshake Career Portal.")}
-                className="w-full py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors text-center shadow-xs cursor-pointer"
+                className="w-full py-2.5 rounded-full bg-purple-700 hover:bg-purple-500 text-white font-semibold transition-colors text-center shadow-xs cursor-pointer"
               >
                 Apply via NSU Handshake
               </button>
@@ -281,3 +281,4 @@ export default function StudentDashboardPage() {
     </DashboardLayout>
   );
 }
+

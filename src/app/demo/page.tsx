@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
@@ -63,12 +63,12 @@ export default function DemoSelectionPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans selection:bg-purple-700 selection:text-white">
       {/* Top Header */}
       <header className="px-6 lg:px-12 py-5 border-b border-slate-200 bg-white/90 backdrop-blur sticky top-0 z-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:bg-blue-500 transition-colors">
+            <div className="w-10 h-10 rounded-xl bg-purple-700 flex items-center justify-center text-white shadow-md shadow-purple-500/20 group-hover:bg-purple-500 transition-colors">
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
@@ -101,7 +101,7 @@ export default function DemoSelectionPage() {
       {/* Hero & Filter Section */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10">
             <span>Interactive Demo Environment &bull; Northbridge State University</span>
           </div>
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-slate-900 tracking-tight">
@@ -122,7 +122,7 @@ export default function DemoSelectionPage() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search by role title, person name, email, department, or keyword..."
-              className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm transition-all"
+              className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-purple-700 shadow-sm transition-all"
             />
             {searchQuery && (
               <button
@@ -144,7 +144,7 @@ export default function DemoSelectionPage() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-150 ${
                   selectedCategory === category
-                    ? "bg-blue-600 text-white shadow-sm"
+                    ? "bg-purple-700 text-white shadow-sm"
                     : "bg-white text-slate-700 hover:text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50 shadow-sm"
                 }`}
               >
@@ -162,20 +162,20 @@ export default function DemoSelectionPage() {
             return (
               <div
                 key={account.id}
-                className="group relative bg-white hover:bg-white border border-slate-200/80 hover:border-blue-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between shadow-sm hover:shadow-md"
+                className="group relative bg-white hover:bg-white border border-slate-200/80 hover:border-purple-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between shadow-sm hover:shadow-md"
               >
                 <div className="space-y-4">
                   {/* Top Bar: Category badge & Role Title */}
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <span className="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full ring-1 ring-inset ring-blue-700/10 uppercase tracking-wider inline-block">
+                      <span className="text-[11px] font-semibold text-purple-800 bg-purple-50 px-2.5 py-0.5 rounded-full ring-1 ring-inset ring-purple-800/10 uppercase tracking-wider inline-block">
                         {account.category}
                       </span>
-                      <h3 className="font-display text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors mt-2">
+                      <h3 className="font-display text-lg font-bold text-slate-900 group-hover:text-purple-700 transition-colors mt-2">
                         {account.roleTitle}
                       </h3>
                     </div>
-                    <span className="shrink-0 w-8 h-8 rounded-lg bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center font-bold text-xs">
+                    <span className="shrink-0 w-8 h-8 rounded-lg bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center font-bold text-xs">
                       {account.roleTitle.substring(0, 2).toUpperCase()}
                     </span>
                   </div>
@@ -191,7 +191,7 @@ export default function DemoSelectionPage() {
                     <div className="text-xs text-slate-500 truncate">
                       {account.title}
                     </div>
-                    <div className="text-xs text-blue-600 font-mono font-medium truncate">
+                    <div className="text-xs text-purple-700 font-mono font-medium truncate">
                       {account.email}
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export default function DemoSelectionPage() {
                     type="button"
                     onClick={() => handleLaunchDemo(account)}
                     disabled={Boolean(launchingId)}
-                    className="w-full py-2.5 px-4 rounded-full bg-blue-600 hover:bg-blue-500 active:bg-blue-800 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all flex items-center justify-center gap-2 group/btn disabled:opacity-50 cursor-pointer"
+                    className="w-full py-2.5 px-4 rounded-full bg-purple-700 hover:bg-purple-500 active:bg-purple-900 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all flex items-center justify-center gap-2 group/btn disabled:opacity-50 cursor-pointer"
                   >
                     {isLaunching ? (
                       <div className="flex items-center gap-2">
@@ -249,7 +249,7 @@ export default function DemoSelectionPage() {
                 setSearchQuery("");
                 setSelectedCategory("All Roles");
               }}
-              className="mt-3 text-xs text-blue-600 hover:text-blue-700 font-semibold"
+              className="mt-3 text-xs text-purple-700 hover:text-purple-800 font-semibold"
             >
               Reset filters
             </button>
@@ -266,3 +266,4 @@ export default function DemoSelectionPage() {
     </div>
   );
 }
+

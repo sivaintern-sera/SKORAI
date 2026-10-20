@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -24,7 +24,7 @@ export default function DashboardEntryPage() {
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center text-slate-600 font-sans">
       <div className="flex flex-col items-center gap-3">
-        <div className="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-3 border-purple-700 border-t-transparent rounded-full animate-spin" />
         <span className="text-sm font-medium tracking-wide text-slate-700">
           Verifying Institutional Authorization &amp; Routing...
         </span>
@@ -32,3 +32,4 @@ export default function DashboardEntryPage() {
     </div>
   );
 }
+

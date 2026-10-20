@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -42,12 +42,12 @@ export default function FinancialAidDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Pell Grant Recipients</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <Users className="w-4 h-4" />
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">34.5%</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             3,450 Eligible Undergraduates
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -101,7 +101,7 @@ export default function FinancialAidDashboardPage() {
                 <span className="font-bold text-slate-900">$18.4M (38.2%)</span>
               </div>
               <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                <div className="bg-blue-600 h-full rounded-full" style={{ width: "38.2%" }} />
+                <div className="bg-purple-700 h-full rounded-full" style={{ width: "38.2%" }} />
               </div>
             </div>
 
@@ -145,7 +145,7 @@ export default function FinancialAidDashboardPage() {
             <button
               type="button"
               onClick={() => alert("Simulated AI Optical Document Verification running on 320 pending files...")}
-              className="text-xs px-3.5 py-1.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors shadow-sm"
+              className="text-xs px-3.5 py-1.5 rounded-full bg-purple-700 hover:bg-purple-500 text-white font-semibold transition-colors shadow-sm"
             >
               Run AI Auto-Verification
             </button>
@@ -163,7 +163,7 @@ export default function FinancialAidDashboardPage() {
                 <div className="font-bold text-slate-900">Identity &amp; Statement of Educational Purpose (V4/V5)</div>
                 <div className="text-[11px] text-slate-500">76 files in queue</div>
               </div>
-              <span className="text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200 font-mono font-bold text-xs">8.1 Days Wait</span>
+              <span className="text-purple-800 bg-purple-50 px-2 py-0.5 rounded-full border border-purple-200 font-mono font-bold text-xs">8.1 Days Wait</span>
             </div>
             <div className="p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/80 flex items-center justify-between">
               <div>
@@ -181,3 +181,4 @@ export default function FinancialAidDashboardPage() {
     </DashboardLayout>
   );
 }
+

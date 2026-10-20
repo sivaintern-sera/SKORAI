@@ -1,4 +1,4 @@
-import {
+﻿import {
   College,
   Department,
   StudentRecord,
@@ -21,7 +21,7 @@ export const INSTITUTION_INFO = {
   currentTerm: "Fall 2026",
   colors: {
     navy: "#0B1220",
-    royalBlue: "#2563EB",
+    royalBlue: "#7c3aed",
     purple: "#6D28D9",
   },
 };
@@ -380,3 +380,4 @@ export function simulateScenario(params: ScenarioSimulationParams): ScenarioSimu
     resourceRecommendations: recommendations,
   };
 }
+

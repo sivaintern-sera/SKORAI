@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -64,8 +64,8 @@ export default function FeaturesPage() {
 
       <main className="flex-1 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200/60">
-            <BarChart3 className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200/60">
+            <BarChart3 className="w-3.5 h-3.5 text-purple-700" />
             <span>Comprehensive Feature Matrix</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight">
@@ -89,7 +89,7 @@ export default function FeaturesPage() {
                     className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2"
                   >
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0" />
                       <h4 className="text-sm font-display font-bold text-slate-900">{item.name}</h4>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed pl-6">{item.desc}</p>
@@ -108,7 +108,7 @@ export default function FeaturesPage() {
           <div className="pt-2">
             <Link
               href="/demo"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm shadow-sm transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-purple-700 hover:bg-purple-500 text-white font-semibold text-sm shadow-sm transition-colors"
             >
               <span>Launch Demo Environment</span>
               <ArrowRight className="w-4 h-4" />
@@ -121,3 +121,4 @@ export default function FeaturesPage() {
     </div>
   );
 }
+

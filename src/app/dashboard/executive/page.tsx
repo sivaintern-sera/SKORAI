@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -31,7 +31,7 @@ export default function ExecutiveDashboardPage() {
           onClick={() => setActiveTab("cfo")}
           className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all ${
             activeTab === "cfo"
-              ? "bg-blue-600 text-white shadow-sm"
+              ? "bg-purple-700 text-white shadow-sm"
               : "bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200"
           }`}
         >
@@ -44,7 +44,7 @@ export default function ExecutiveDashboardPage() {
           onClick={() => setActiveTab("cio")}
           className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all ${
             activeTab === "cio"
-              ? "bg-blue-600 text-white shadow-sm"
+              ? "bg-purple-700 text-white shadow-sm"
               : "bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200"
           }`}
         >
@@ -57,7 +57,7 @@ export default function ExecutiveDashboardPage() {
           onClick={() => setActiveTab("ciso")}
           className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all ${
             activeTab === "ciso"
-              ? "bg-blue-600 text-white shadow-sm"
+              ? "bg-purple-700 text-white shadow-sm"
               : "bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200"
           }`}
         >
@@ -77,8 +77,8 @@ export default function ExecutiveDashboardPage() {
             </div>
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-xs text-slate-500 font-medium">Tuition &amp; Fees Inflow</div>
-              <div className="text-2xl font-display font-bold text-blue-600 mt-2">$104.2M</div>
-              <div className="text-xs text-blue-600 font-semibold mt-1">60% Total Revenue Share</div>
+              <div className="text-2xl font-display font-bold text-purple-700 mt-2">$104.2M</div>
+              <div className="text-xs text-purple-700 font-semibold mt-1">60% Total Revenue Share</div>
             </div>
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-xs text-slate-500 font-medium">Endowment Market Value</div>
@@ -106,7 +106,7 @@ export default function ExecutiveDashboardPage() {
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-xs text-slate-500 font-medium">Cloud Infrastructure Cost</div>
               <div className="text-2xl font-display font-bold text-slate-900 mt-2">$42,500/mo</div>
-              <div className="text-xs text-blue-600 font-semibold mt-1">-8% Cost Optimization YoY</div>
+              <div className="text-xs text-purple-700 font-semibold mt-1">-8% Cost Optimization YoY</div>
             </div>
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-xs text-slate-500 font-medium">API Integration Health</div>
@@ -115,7 +115,7 @@ export default function ExecutiveDashboardPage() {
             </div>
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-xs text-slate-500 font-medium">IT Helpdesk Mean SLA</div>
-              <div className="text-2xl font-display font-bold text-blue-600 mt-2">2.4 hrs</div>
+              <div className="text-2xl font-display font-bold text-purple-700 mt-2">2.4 hrs</div>
               <div className="text-xs text-emerald-600 font-semibold mt-1">94% First-Touch Resolution</div>
             </div>
           </div>
@@ -143,8 +143,8 @@ export default function ExecutiveDashboardPage() {
             </div>
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-xs text-slate-500 font-medium">AI Model Risk Guardrails</div>
-              <div className="text-2xl font-display font-bold text-blue-600 mt-2">Active</div>
-              <div className="text-xs text-blue-600 font-semibold mt-1">FERPA PII Sanitization Enforced</div>
+              <div className="text-2xl font-display font-bold text-purple-700 mt-2">Active</div>
+              <div className="text-xs text-purple-700 font-semibold mt-1">FERPA PII Sanitization Enforced</div>
             </div>
           </div>
 
@@ -154,3 +154,4 @@ export default function ExecutiveDashboardPage() {
     </DashboardLayout>
   );
 }
+

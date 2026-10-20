@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
@@ -45,7 +45,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo & Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:bg-blue-500 transition-colors">
+            <div className="w-10 h-10 rounded-xl bg-purple-700 flex items-center justify-center text-white shadow-md shadow-purple-500/20 group-hover:bg-purple-500 transition-colors">
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
@@ -68,8 +68,8 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                    isActive ? "text-blue-600 font-semibold" : "text-slate-700"
+                  className={`text-sm font-medium transition-colors hover:text-purple-700 ${
+                    isActive ? "text-purple-700 font-semibold" : "text-slate-700"
                   }`}
                 >
                   {link.name}
@@ -94,7 +94,7 @@ export function Navbar() {
             </Link>
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center rounded-full py-2 px-4.5 text-sm font-semibold bg-blue-600 text-white hover:bg-blue-500 active:bg-blue-800 transition-colors shadow-sm"
+              className="group inline-flex items-center justify-center rounded-full py-2 px-4.5 text-sm font-semibold bg-purple-700 text-white hover:bg-purple-500 active:bg-purple-900 transition-colors shadow-sm"
             >
               Get started
               <ArrowRight className="w-3.5 h-3.5 ml-1.5 transition-transform group-hover:translate-x-0.5" />
@@ -105,7 +105,7 @@ export function Navbar() {
           <div className="lg:hidden flex items-center gap-2">
             <Link
               href="/demo"
-              className="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10"
+              className="px-3 py-1.5 text-xs font-semibold rounded-full bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10"
             >
               Demo
             </Link>
@@ -134,7 +134,7 @@ export function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-colors flex items-center justify-between"
+                className="px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-purple-700 transition-colors flex items-center justify-between"
               >
                 {link.name}
                 <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -160,7 +160,7 @@ export function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-center py-2.5 text-sm font-semibold rounded-full bg-blue-600 text-white hover:bg-blue-500 shadow-sm"
+                className="text-center py-2.5 text-sm font-semibold rounded-full bg-purple-700 text-white hover:bg-purple-500 shadow-sm"
               >
                 Get Started
               </Link>
@@ -171,3 +171,4 @@ export function Navbar() {
     </header>
   );
 }
+

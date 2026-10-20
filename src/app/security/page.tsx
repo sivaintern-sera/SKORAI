@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -35,8 +35,8 @@ export default function SecurityPage() {
         </div>
 
         {/* Legal & Compliance Notice Alert */}
-        <div className="p-5 rounded-2xl bg-blue-50/70 border border-blue-200/70 flex items-start gap-3.5 text-xs text-slate-700 max-w-4xl mx-auto shadow-sm">
-          <AlertCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+        <div className="p-5 rounded-2xl bg-purple-50/70 border border-purple-200/70 flex items-start gap-3.5 text-xs text-slate-700 max-w-4xl mx-auto shadow-sm">
+          <AlertCircle className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
           <div className="space-y-1.5 leading-relaxed">
             <strong className="text-slate-900 font-display font-bold">FERPA Awareness &amp; Certification Transparency:</strong>
             <p>
@@ -48,7 +48,7 @@ export default function SecurityPage() {
         {/* Security Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-8 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-3">
-            <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center">
               <Lock className="w-5 h-5" />
             </div>
             <h3 className="text-lg font-display font-bold text-slate-900">PostgreSQL Row Level Security (RLS)</h3>
@@ -93,3 +93,4 @@ export default function SecurityPage() {
     </div>
   );
 }
+

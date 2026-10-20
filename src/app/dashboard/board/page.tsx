@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -26,8 +26,8 @@ export default function BoardDashboardPage() {
       subtitle="Patricia Lewis &bull; Strategic fiduciary performance, institutional risk radar, and university scorecard"
     >
       {/* Privacy Notice Alert */}
-      <div className="p-4 rounded-2xl bg-blue-50/70 border border-blue-200/70 flex items-center gap-2 text-xs text-blue-900 font-sans">
-        <Lock className="w-4 h-4 text-blue-600 shrink-0" />
+      <div className="p-4 rounded-2xl bg-purple-50/70 border border-purple-200/70 flex items-center gap-2 text-xs text-purple-950 font-sans">
+        <Lock className="w-4 h-4 text-purple-700 shrink-0" />
         <span>
           <strong>FERPA Governance Privacy Notice:</strong> This dashboard renders macro-institutional aggregates only. Individual student personally identifiable information (PII) is strictly restricted in accordance with university bylaws.
         </span>
@@ -60,8 +60,8 @@ export default function BoardDashboardPage() {
 
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
           <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">Strategic Plan Execution</div>
-          <div className="font-display text-3xl font-extrabold text-blue-600 mt-2">85%</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">18 of 20 Goals on Schedule</div>
+          <div className="font-display text-3xl font-extrabold text-purple-700 mt-2">85%</div>
+          <div className="text-xs text-purple-700 font-semibold mt-1">18 of 20 Goals on Schedule</div>
           <div className="text-[11px] text-slate-500 mt-1">Next Board Review: Dec 14, 2026</div>
         </div>
       </div>
@@ -99,7 +99,7 @@ export default function BoardDashboardPage() {
             <button
               type="button"
               onClick={() => alert("Downloading Official Board Dossier (PDF)...")}
-              className="px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-xs cursor-pointer"
+              className="px-4 py-2 rounded-full bg-purple-700 hover:bg-purple-500 text-white text-xs font-semibold shadow-xs cursor-pointer"
             >
               Download Board Dossier
             </button>
@@ -109,3 +109,4 @@ export default function BoardDashboardPage() {
     </DashboardLayout>
   );
 }
+

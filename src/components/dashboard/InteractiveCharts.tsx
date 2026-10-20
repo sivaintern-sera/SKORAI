@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import {
@@ -56,8 +56,8 @@ export function RetentionTrendChart() {
           <AreaChart data={RETENTION_DATA} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
             <defs>
               <linearGradient id="colorRetention" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#2563EB" stopOpacity={0.25} />
-                <stop offset="95%" stopColor="#2563EB" stopOpacity={0.0} />
+                <stop offset="5%" stopColor="#7c3aed" stopOpacity={0.25} />
+                <stop offset="95%" stopColor="#7c3aed" stopOpacity={0.0} />
               </linearGradient>
               <linearGradient id="colorGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#4F46E5" stopOpacity={0.2} />
@@ -78,7 +78,7 @@ export function RetentionTrendChart() {
               }}
             />
             <Legend wrapperStyle={{ fontSize: "11px", paddingTop: "8px" }} />
-            <Area type="monotone" dataKey="retention" name="1st-Year Retention Rate (%)" stroke="#2563EB" strokeWidth={2.5} fillOpacity={1} fill="url(#colorRetention)" />
+            <Area type="monotone" dataKey="retention" name="1st-Year Retention Rate (%)" stroke="#7c3aed" strokeWidth={2.5} fillOpacity={1} fill="url(#colorRetention)" />
             <Area type="monotone" dataKey="graduation" name="6-Year Graduation Rate (%)" stroke="#4F46E5" strokeWidth={2.5} fillOpacity={1} fill="url(#colorGrad)" />
             <Line type="monotone" dataKey="nationalAvg" name="National Benchmark" stroke="#CBD5E1" strokeDasharray="4 4" strokeWidth={1.5} dot={false} />
           </AreaChart>
@@ -110,7 +110,7 @@ export function CollegeEnrollmentChart() {
             Fall 2026 distribution across 6 academic colleges
           </p>
         </div>
-        <span className="text-xs text-blue-700 font-semibold bg-blue-50 px-2.5 py-0.5 rounded-full ring-1 ring-inset ring-blue-700/10">10,000 Total</span>
+        <span className="text-xs text-purple-800 font-semibold bg-purple-50 px-2.5 py-0.5 rounded-full ring-1 ring-inset ring-purple-800/10">10,000 Total</span>
       </div>
 
       <div className="h-64 w-full">
@@ -130,7 +130,7 @@ export function CollegeEnrollmentChart() {
               }}
             />
             <Legend wrapperStyle={{ fontSize: "11px", paddingTop: "8px" }} />
-            <Bar dataKey="students" name="Enrolled Students" fill="#2563EB" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="students" name="Enrolled Students" fill="#7c3aed" radius={[4, 4, 0, 0]} />
             <Bar dataKey="faculty" name="Full-Time Faculty" fill="#4F46E5" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
@@ -161,7 +161,7 @@ export function InstitutionalRiskRadar() {
             Multi-dimensional institutional readiness score (0-100)
           </p>
         </div>
-        <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full ring-1 ring-inset ring-blue-700/10">
+        <span className="text-xs font-semibold text-purple-800 bg-purple-50 px-2.5 py-0.5 rounded-full ring-1 ring-inset ring-purple-800/10">
           Composite: 85.3
         </span>
       </div>
@@ -172,7 +172,7 @@ export function InstitutionalRiskRadar() {
             <PolarGrid stroke="#E2E8F0" />
             <PolarAngleAxis dataKey="subject" stroke="#64748B" fontSize={10} />
             <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="#CBD5E1" fontSize={9} />
-            <Radar name="Northbridge Health Index" dataKey="score" stroke="#2563EB" fill="#2563EB" fillOpacity={0.25} />
+            <Radar name="Northbridge Health Index" dataKey="score" stroke="#7c3aed" fill="#7c3aed" fillOpacity={0.25} />
             <Tooltip
               contentStyle={{
                 backgroundColor: "#FFFFFF",
@@ -192,7 +192,7 @@ export function InstitutionalRiskRadar() {
 
 // 4. Financial Aid & Tuition Revenue Flow
 const REVENUE_DATA = [
-  { category: "Tuition & Fees", amount: 104.2, fill: "#2563EB" },
+  { category: "Tuition & Fees", amount: 104.2, fill: "#7c3aed" },
   { category: "State Appropriations", amount: 48.5, fill: "#3B82F6" },
   { category: "Research Grants", amount: 21.8, fill: "#6366F1" },
   { category: "Endowment Draw", amount: 12.4, fill: "#0EA5E9" },
@@ -248,3 +248,4 @@ export function RevenueBreakdownChart() {
     </div>
   );
 }
+

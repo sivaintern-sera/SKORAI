@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect } from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -141,7 +141,7 @@ export default function ProfilePage() {
         {/* ============================================================ */}
         <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
           {/* Cover Strip */}
-          <div className="h-36 sm:h-44 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 relative">
+          <div className="h-36 sm:h-44 bg-gradient-to-r from-slate-900 via-purple-950 to-slate-900 relative">
             <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px] opacity-25" />
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white backdrop-blur-xs border border-white/20">
@@ -160,7 +160,7 @@ export default function ProfilePage() {
               <div className="flex flex-col sm:flex-row sm:items-end gap-5">
                 {/* Avatar with negative top margin overlapping the cover banner */}
                 <div className="-mt-14 sm:-mt-16 shrink-0">
-                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-blue-600 text-white font-display font-extrabold text-3xl sm:text-4xl flex items-center justify-center ring-4 ring-white shadow-xl">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-purple-700 text-white font-display font-extrabold text-3xl sm:text-4xl flex items-center justify-center ring-4 ring-white shadow-xl">
                     {currentAccount.name.charAt(0)}
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export default function ProfilePage() {
                     <h1 className="font-display text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                       {currentAccount.name}
                     </h1>
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10">
                       {currentAccount.roleTitle}
                     </span>
                   </div>
@@ -201,7 +201,7 @@ export default function ProfilePage() {
                   <span>{copiedId ? "Copied ID" : "Copy Account ID"}</span>
                 </button>
                 <div className="px-3.5 py-2 rounded-full bg-slate-900 text-white font-semibold text-xs shadow-sm flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-purple-400" />
                   <span>FERPA Level-4 Clearance</span>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function ProfilePage() {
               </div>
               <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Platform Persona</span>
-                <p className="text-xs font-bold text-blue-600 truncate">{currentAccount.category}</p>
+                <p className="text-xs font-bold text-purple-700 truncate">{currentAccount.category}</p>
               </div>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("credentials")}
             className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "credentials"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
@@ -249,7 +249,7 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("permissions")}
             className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "permissions"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
@@ -260,7 +260,7 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("security")}
             className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "security"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
@@ -271,7 +271,7 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("preferences")}
             className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
               activeTab === "preferences"
-                ? "bg-blue-600 text-white shadow-sm"
+                ? "bg-purple-700 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
@@ -288,13 +288,13 @@ export default function ProfilePage() {
               {/* Bio Card */}
               <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
                 <h3 className="font-display text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                  <User className="w-4 h-4 text-blue-600" />
+                  <User className="w-4 h-4 text-purple-700" />
                   <span>Institutional Biography</span>
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   {currentCreds.bio}
                 </p>
-                <div className="p-4 rounded-2xl bg-blue-50/60 border border-blue-200/70 text-xs text-slate-700 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-purple-50/60 border border-purple-200/70 text-xs text-slate-700 leading-relaxed">
                   <strong>Access Scope:</strong> {currentAccount.accessDescription}
                 </div>
               </div>
@@ -302,13 +302,13 @@ export default function ProfilePage() {
               {/* Degrees & Appointments */}
               <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
                 <h3 className="font-display text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                  <GraduationCap className="w-4 h-4 text-blue-600" />
+                  <GraduationCap className="w-4 h-4 text-purple-700" />
                   <span>Degrees &amp; Formal Academic Appointments</span>
                 </h3>
                 <div className="space-y-3">
                   {currentCreds.degrees.map((degree, idx) => (
                     <div key={idx} className="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70">
-                      <Award className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                      <Award className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                       <span className="text-xs font-medium text-slate-800 leading-relaxed">
                         {degree}
                       </span>
@@ -326,28 +326,28 @@ export default function ProfilePage() {
                 </h3>
                 <ul className="space-y-3.5 text-xs text-slate-600">
                   <li className="flex items-start gap-3">
-                    <Mail className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <Mail className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                     <div>
                       <div className="font-semibold text-slate-900">Official Email</div>
                       <div className="text-slate-500 break-all">{currentAccount.email}</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Phone className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <Phone className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                     <div>
                       <div className="font-semibold text-slate-900">Direct Extension</div>
                       <div className="text-slate-500">{currentCreds.phone}</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <MapPin className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <MapPin className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                     <div>
                       <div className="font-semibold text-slate-900">Office Location</div>
                       <div className="text-slate-500">{currentCreds.office}</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Building className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <Building className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                     <div>
                       <div className="font-semibold text-slate-900">Institution</div>
                       <div className="text-slate-500">{currentAccount.institution}</div>
@@ -415,7 +415,7 @@ export default function ProfilePage() {
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-slate-900">Financial Aid &amp; FAFSA Records</span>
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-blue-700 border border-blue-200">
+                  <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-purple-800 border border-purple-200">
                     Role-Restricted
                   </span>
                 </div>
@@ -439,7 +439,7 @@ export default function ProfilePage() {
 
             <div className="p-4 rounded-2xl bg-slate-900 text-white space-y-2 text-xs">
               <div className="flex items-center gap-2">
-                <Lock className="w-4 h-4 text-blue-400" />
+                <Lock className="w-4 h-4 text-purple-400" />
                 <span className="font-semibold">Cryptographic RBAC Token</span>
               </div>
               <p className="text-slate-400 font-mono text-[11px] break-all">
@@ -465,7 +465,7 @@ export default function ProfilePage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                <div className="flex items-center gap-2 text-purple-700 font-semibold">
                   <Fingerprint className="w-4 h-4" />
                   <span>Hardware MFA</span>
                 </div>
@@ -474,7 +474,7 @@ export default function ProfilePage() {
               </div>
 
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                <div className="flex items-center gap-2 text-purple-700 font-semibold">
                   <Laptop className="w-4 h-4" />
                   <span>Device Trust</span>
                 </div>
@@ -483,7 +483,7 @@ export default function ProfilePage() {
               </div>
 
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                <div className="flex items-center gap-2 text-purple-700 font-semibold">
                   <Clock className="w-4 h-4" />
                   <span>Session Expiry</span>
                 </div>
@@ -539,7 +539,7 @@ export default function ProfilePage() {
                   type="checkbox"
                   checked={prefWeeklyDigest}
                   onChange={(e) => setPrefWeeklyDigest(e.target.checked)}
-                  className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                  className="w-4 h-4 text-purple-700 rounded focus:ring-purple-500"
                 />
               </label>
 
@@ -552,7 +552,7 @@ export default function ProfilePage() {
                   type="checkbox"
                   checked={prefRetentionAlerts}
                   onChange={(e) => setPrefRetentionAlerts(e.target.checked)}
-                  className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                  className="w-4 h-4 text-purple-700 rounded focus:ring-purple-500"
                 />
               </label>
 
@@ -565,7 +565,7 @@ export default function ProfilePage() {
                   type="checkbox"
                   checked={prefYieldAlerts}
                   onChange={(e) => setPrefYieldAlerts(e.target.checked)}
-                  className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                  className="w-4 h-4 text-purple-700 rounded focus:ring-purple-500"
                 />
               </label>
 
@@ -578,7 +578,7 @@ export default function ProfilePage() {
                   type="checkbox"
                   checked={prefFafsaAlerts}
                   onChange={(e) => setPrefFafsaAlerts(e.target.checked)}
-                  className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                  className="w-4 h-4 text-purple-700 rounded focus:ring-purple-500"
                 />
               </label>
             </div>
@@ -593,7 +593,7 @@ export default function ProfilePage() {
               <button
                 type="button"
                 onClick={handleSavePreferences}
-                className="px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-sm transition-colors cursor-pointer"
+                className="px-5 py-2.5 rounded-full bg-purple-700 hover:bg-purple-500 text-white text-xs font-semibold shadow-sm transition-colors cursor-pointer"
               >
                 Save Preferences
               </button>
@@ -604,3 +604,4 @@ export default function ProfilePage() {
     </DashboardLayout>
   );
 }
+

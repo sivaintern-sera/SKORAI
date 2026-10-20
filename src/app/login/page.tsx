@@ -70,11 +70,11 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-between text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-slate-50 flex flex-col justify-between text-slate-900 font-sans selection:bg-purple-700 selection:text-white">
       {/* Top Header Bar */}
       <header className="px-6 lg:px-12 py-5 flex items-center justify-between border-b border-slate-200/80 bg-white/80 backdrop-blur-sm">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:bg-blue-500 transition-colors">
+          <div className="w-10 h-10 rounded-xl bg-purple-700 flex items-center justify-center text-white shadow-md shadow-purple-500/20 group-hover:bg-purple-500 transition-colors">
             <GraduationCap className="w-5 h-5" />
           </div>
           <div>
@@ -90,7 +90,7 @@ export default function LoginPage() {
         <div className="flex items-center gap-3">
           <Link
             href="/demo"
-            className="group inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10 hover:bg-blue-100 transition-all"
+            className="group inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-full bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10 hover:bg-purple-100 transition-all"
           >
             <span className="hidden sm:inline">Explore</span> 14 Demo Roles
           </Link>
@@ -109,13 +109,13 @@ export default function LoginPage() {
           {/* LEFT PANEL */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 ring-1 ring-inset ring-blue-700/10">
-                <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 ring-1 ring-inset ring-purple-800/10">
+                <ShieldCheck className="w-3.5 h-3.5 text-purple-700" />
                 Institutional Single Sign-On &amp; Decision Portal
               </div>
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900 leading-tight">
                 Intelligence That Powers{" "}
-                <span className="text-blue-600">Higher Education.</span>
+                <span className="text-purple-700">Higher Education.</span>
               </h1>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl">
                 Access university intelligence, institutional analytics, predictive retention modeling, and AI-powered executive decision support for Northbridge State University.
@@ -137,7 +137,7 @@ export default function LoginPage() {
 
               {/* Overlay Stat Pill */}
               <div className="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-md border border-slate-200 p-3 sm:p-4 rounded-2xl flex items-center gap-4 text-xs shadow-lg">
-                <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-700/10 flex items-center justify-center shrink-0">
+                <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-700 ring-1 ring-purple-800/10 flex items-center justify-center shrink-0">
                   <GraduationCap className="w-5 h-5" />
                 </div>
                 <div>
@@ -152,16 +152,10 @@ export default function LoginPage() {
           <div className="lg:col-span-5 w-full">
             <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-10 shadow-xl shadow-slate-900/5 relative">
               {/* User Avatar Circle */}
-              <div className="flex flex-col items-center text-center space-y-2 mb-6">
-                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 ring-1 ring-inset ring-blue-700/10 flex items-center justify-center mb-1">
+              <div className="flex justify-center mb-6">
+                <div className="w-14 h-14 rounded-full bg-purple-50 text-purple-700 ring-1 ring-inset ring-purple-700/20 flex items-center justify-center">
                   <User className="w-7 h-7" />
                 </div>
-                <h2 className="font-display text-2xl font-bold text-slate-900 tracking-tight">
-                  Welcome Back
-                </h2>
-                <p className="text-xs text-slate-500">
-                  Sign in with your institutional credentials or enter the demo platform.
-                </p>
               </div>
 
               {/* Feedback messages */}
@@ -196,7 +190,7 @@ export default function LoginPage() {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="e.g. president@northbridge.edu"
                       required
-                      className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50/70 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50/70 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-700/20 focus:border-purple-700 transition-all"
                     />
                   </div>
                 </div>
@@ -215,7 +209,7 @@ export default function LoginPage() {
                         e.preventDefault();
                         alert("For demo evaluation, you can enter any password or click 'Explore the Demo Platform' below.");
                       }}
-                      className="text-[11px] text-blue-600 hover:text-blue-700 transition-colors font-medium"
+                      className="text-[11px] text-purple-700 hover:text-purple-800 transition-colors font-medium"
                     >
                       Forgot password?
                     </a>
@@ -229,7 +223,7 @@ export default function LoginPage() {
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="••••••••••••"
                       required
-                      className="w-full pl-10 pr-10 py-2.5 rounded-xl bg-slate-50/70 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+                      className="w-full pl-10 pr-10 py-2.5 rounded-xl bg-slate-50/70 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-700/20 focus:border-purple-700 transition-all"
                     />
                     <button
                       type="button"
@@ -252,7 +246,7 @@ export default function LoginPage() {
                       type="checkbox"
                       checked={rememberMe}
                       onChange={(e) => setRememberMe(e.target.checked)}
-                      className="w-4 h-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                      className="w-4 h-4 rounded border-slate-300 text-purple-700 focus:ring-purple-500"
                     />
                     <span>Remember institutional device</span>
                   </label>
@@ -261,7 +255,7 @@ export default function LoginPage() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full mt-2 py-3 px-4 rounded-full bg-blue-600 hover:bg-blue-500 active:bg-blue-800 text-white text-sm font-semibold shadow-md shadow-blue-500/20 transition-all flex items-center justify-center gap-2 disabled:opacity-60 cursor-pointer"
+                  className="w-full mt-2 py-3 px-4 rounded-full bg-purple-700 hover:bg-purple-500 active:bg-purple-900 text-white text-sm font-semibold shadow-md shadow-purple-500/20 transition-all flex items-center justify-center gap-2 disabled:opacity-60 cursor-pointer"
                 >
                   {isLoading ? (
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -304,11 +298,11 @@ export default function LoginPage() {
             Authorized access only. Protected by SKORAI Multi-Factor Security.
           </span>
           <div className="flex items-center gap-4">
-            <Link href="/security" className="hover:text-blue-600 transition-colors">
+            <Link href="/security" className="hover:text-purple-700 transition-colors">
               FERPA &amp; Data Privacy Policy
             </Link>
             <span>&bull;</span>
-            <Link href="/security" className="hover:text-blue-600 transition-colors">
+            <Link href="/security" className="hover:text-purple-700 transition-colors">
               Terms of Institutional Use
             </Link>
           </div>
@@ -317,3 +311,4 @@ export default function LoginPage() {
     </div>
   );
 }
+

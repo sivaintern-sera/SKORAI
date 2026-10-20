@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -30,7 +30,7 @@ export default function AdvisorDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Assigned Caseload</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <Users className="w-4 h-4" />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function AdvisorDashboardPage() {
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">8 Today</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             100% Fall Registration Cleared
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -96,12 +96,12 @@ export default function AdvisorDashboardPage() {
       <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Lightbulb className="w-4 h-4 text-blue-600" />
+            <Lightbulb className="w-4 h-4 text-purple-700" />
             <h4 className="text-base font-display font-bold text-slate-900 tracking-tight">
               Recommended Advisor Intervention Actions
             </h4>
           </div>
-          <span className="text-xs text-blue-600 bg-blue-50 font-semibold px-2.5 py-1 rounded-full">Automated AI Queue</span>
+          <span className="text-xs text-purple-700 bg-purple-50 font-semibold px-2.5 py-1 rounded-full">Automated AI Queue</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
@@ -120,7 +120,7 @@ export default function AdvisorDashboardPage() {
             <button
               type="button"
               onClick={() => alert("Simulated batch SMS/Email reminder dispatched to 6 students with Financial Aid Office cc'd.")}
-              className="w-full py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors text-center text-xs shadow-sm"
+              className="w-full py-2 rounded-full bg-purple-700 hover:bg-purple-500 text-white font-semibold transition-colors text-center text-xs shadow-sm"
             >
               Batch Outreach Reminder
             </button>
@@ -175,3 +175,4 @@ export default function AdvisorDashboardPage() {
     </DashboardLayout>
   );
 }
+

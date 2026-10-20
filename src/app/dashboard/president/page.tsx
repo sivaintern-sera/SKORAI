@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -32,12 +32,12 @@ export default function PresidentDashboardPage() {
       {/* KPI Cards Row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* KPI 1: Total Enrollment */}
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-500/40 transition-all relative overflow-hidden group">
+        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-purple-500/40 transition-all relative overflow-hidden group">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">
               Total Enrollment
             </span>
-            <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center">
               <Users className="w-4 h-4" />
             </div>
           </div>
@@ -54,12 +54,12 @@ export default function PresidentDashboardPage() {
         </div>
 
         {/* KPI 2: First-Year Retention */}
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-500/40 transition-all relative overflow-hidden group">
+        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-purple-500/40 transition-all relative overflow-hidden group">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">
               1st-Year Retention
             </span>
-            <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center">
               <GraduationCap className="w-4 h-4" />
             </div>
           </div>
@@ -76,12 +76,12 @@ export default function PresidentDashboardPage() {
         </div>
 
         {/* KPI 3: Operating Revenue */}
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-500/40 transition-all relative overflow-hidden group">
+        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-purple-500/40 transition-all relative overflow-hidden group">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">
               Annual Operating Budget
             </span>
-            <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center">
               <DollarSign className="w-4 h-4" />
             </div>
           </div>
@@ -98,19 +98,19 @@ export default function PresidentDashboardPage() {
         </div>
 
         {/* KPI 4: Institutional Health Index */}
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-500/40 transition-all relative overflow-hidden group">
+        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-purple-500/40 transition-all relative overflow-hidden group">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider font-display">
               Health &amp; Risk Index
             </span>
-            <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-700/10 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-800 ring-1 ring-purple-800/10 flex items-center justify-center">
               <ShieldCheck className="w-4 h-4" />
             </div>
           </div>
           <div className="font-display text-3xl font-extrabold text-slate-900 mt-2">
             85.3 <span className="text-sm font-normal text-slate-400">/ 100</span>
           </div>
-          <div className="flex items-center gap-1.5 text-xs text-blue-600 font-semibold mt-2">
+          <div className="flex items-center gap-1.5 text-xs text-purple-700 font-semibold mt-2">
             <Award className="w-3.5 h-3.5" />
             <span>HLC Readiness: 94 / 100</span>
           </div>
@@ -145,3 +145,4 @@ export default function PresidentDashboardPage() {
     </DashboardLayout>
   );
 }
+

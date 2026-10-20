@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
@@ -50,12 +50,12 @@ export default function AccreditationDashboardPage() {
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between text-slate-500 text-xs font-medium">
             <span>Evidence Artifacts Cataloged</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-700">
               <FileText className="w-4 h-4" />
             </div>
           </div>
           <div className="text-2xl font-display font-bold text-slate-900 mt-2">482 Files</div>
-          <div className="text-xs text-blue-600 font-semibold mt-1">
+          <div className="text-xs text-purple-700 font-semibold mt-1">
             98% Core Component Coverage
           </div>
           <div className="text-xs text-slate-500 mt-1">
@@ -114,7 +114,7 @@ export default function AccreditationDashboardPage() {
               className="p-4 rounded-xl bg-slate-50/80 border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50 transition-colors"
             >
               <div>
-                <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider">
+                <span className="text-[10px] font-bold text-purple-700 uppercase tracking-wider">
                   {c.id}
                 </span>
                 <div className="text-sm font-display font-bold text-slate-900 mt-0.5">{c.name}</div>
@@ -133,7 +133,7 @@ export default function AccreditationDashboardPage() {
                       ? "bg-emerald-50 text-emerald-700 border-emerald-200"
                       : c.status === "Evidence Gap"
                       ? "bg-amber-50 text-amber-700 border-amber-200"
-                      : "bg-blue-50 text-blue-700 border-blue-200"
+                      : "bg-purple-50 text-purple-800 border-purple-200"
                   }`}
                 >
                   {c.status}
@@ -149,3 +149,4 @@ export default function AccreditationDashboardPage() {
     </DashboardLayout>
   );
 }
+
